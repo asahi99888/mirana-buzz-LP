@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>採用特化TikTok運用代行サービス | MIRANA Buzz</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background-image: url('https://page1.genspark.site/v1/base64_upload/b9b13df299cdb110b7c36414dd82948e');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #FF4D79 0%, #FF809F 100%);
+        }
+        
+        .section {
+            padding: 5rem 1rem;
+        }
+        
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .check-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .check-item:before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #FF4D79;
+        }
+        
+        .step-item {
+            position: relative;
+        }
+        
+        .step-item:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 2.5rem;
+            bottom: -2.5rem;
+            left: 1.25rem;
+            width: 2px;
+            background: #FF4D79;
+        }
+        
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #FF4D79;
+            color: white;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+        
+        .merit-icon {
+            font-size: 2.5rem;
+            color: #FF4D79;
+            margin-bottom: 1rem;
+        }
+        
+        .service-icon {
+            font-size: 2rem;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 77, 121, 0.1);
+            color: #FF4D79;
+            margin-bottom: 1rem;
+        }
+        
+        .price-card {
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .price-card:hover {
+            border-color: #FF4D79;
+            transform: scale(1.03);
+        }
+        
+        .tiktok-statistic {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tiktok-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #000;
+            color: white;
+            font-size: 0.75rem;
+            margin-right: 0.5rem;
+        }
+        
+        .waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23ffffff" d="M0,192L48,202.7C96,213,192,235,288,224C384,213,480,171,576,170.7C672,171,768,213,864,229.3C960,245,1056,235,1152,202.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat;
+            background-size: cover;
+        }
+        
+        /* 未来セクションの新しいスタイル */
+        .future-section {
+            background: #f9f9f9;
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        
+        .future-section::before {
+            content: "";
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(255,77,121,0.1) 0%, rgba(255,128,159,0.05) 100%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .future-section::after {
+            content: "";
+            position: absolute;
+            bottom: -15%;
+            left: -5%;
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, rgba(255,77,121,0.05) 0%, rgba(255,128,159,0.1) 100%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .future-card {
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            position: relative;
+            transition: all 0.4s ease;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            min-height: 280px;
+        }
+        
+        .future-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px -10px rgba(255, 77, 121, 0.2);
+        }
+        
+        .future-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #FF4D79, #FF809F);
+            border-radius: 16px 16px 0 0;
+        }
+        
+        .future-icon-wrap {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .future-icon-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255,77,121,0.15) 0%, rgba(255,128,159,0.05) 100%);
+            animation: pulse 2s infinite;
+        }
+        
+        .future-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3.5rem;
+            color: #FF4D79;
+        }
+        
+        .future-card-pattern {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF4D79' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: -1;
+            border-radius: 0 0 16px 16px;
+        }
+        
+        .future-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .future-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+        }
+        
+        .tiktok-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #000000;
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tiktok-badge i {
+            margin-right: 0.25rem;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+        }
+        
+        /* 実績紹介セクションのスタイル調整 */
+        .case-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 8px 8px 0 0;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .case-content {
+            padding: 1.5rem;
+        }
+        
+        .case-card {
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
+        <div class="container mx-auto py-3 px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-lg font-bold text-gray-800">採用特化TikTok運用代行サービス</h1>
+            </div>
+            <div class="text-xs text-gray-500">MIRANA Buzz</div>
+        </div>
+    </header>
+
+    <!-- 1. ファーストビュー -->
+    <section class="hero min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 hero-content text-white text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">tiktok運用を全て丸投げ</h2>
+            <p class="text-xl md:text-2xl mb-8">SNSで成果が出ない採用活動に。TikTok運用で"応募が絶えない"状況をつくります。</p>
+            <div class="inline-block">
+                <a href="#contact" class="gradient-bg text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all">
+                    お問い合わせはこちら <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+        <div class="waves"></div>
+    </section>
+
+    <!-- 2. お悩み共感セクション -->
+    <section class="bg-gray-100 section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">こんなお悩み、ありませんか？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 flex flex-col items-center text-center">
+                    <div class="rounded-full p-4 bg-red-100 text-red-500 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="text-lg font-medium mb-3">SNSで採用に取り組んでいるが、なかなか効果が出ない</p>
+                    <p class="text-gray-600">多くの企業がSNSを活用するも、適切な運用ができていないことが多いです。</p>
+                </div>
+                <div class="card bg-white p-6 flex flex-col items-center text-center">
+                    <div class="rounded-full p-4 bg-blue-100 text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <p class="text-lg font-medium mb-3">SNSをやりたいけど、ノウハウも時間もない</p>
+                    <p class="text-gray-600">効果的なSNS運用には専門知識と時間が必要です。本業に集中したいけれど...</p>
+                </div>
+                <div class="card bg-white p-6 flex flex-col items-center text-center">
+                    <div class="rounded-full p-4 bg-green-100 text-green-500 text-4xl mb-4">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <p class="text-lg font-medium mb-3">人材の応募が全く来ない</p>
+                    <p class="text-gray-600">採用活動を行っても応募が少なく、良い人材に巡り会えない悩みを抱えています。</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-xl font-medium">そんな中小企業の課題を、TikTok運用代行で解決します。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 実現イメージ・TikTokの強み -->
+    <section class="future-section py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">TikTok運用で、こんな未来が実現できます。</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- 応募者からの問い合わせが絶えない -->
+                <div class="future-card shadow-lg">
+                    <div class="future-card-pattern"></div>
+                    <div class="future-icon-wrap">
+                        <div class="future-icon-bg"></div>
+                        <i class="fas fa-chart-line future-icon"></i>
+                    </div>
+                    <h3 class="future-title">応募者からの問い合わせが絶えない</h3>
+                    <p class="future-description">TikTokでの効果的な情報発信により、常に新しい応募者が集まる状況を作り出します。ブランディングと採用を同時に実現。</p>
+                </div>
+                
+                <!-- 会社の認知度が向上 -->
+                <div class="future-card shadow-lg">
+                    <div class="future-card-pattern"></div>
+                    <div class="future-icon-wrap">
+                        <div class="future-icon-bg"></div>
+                        <i class="fas fa-building future-icon"></i>
+                    </div>
+                    <h3 class="future-title">会社の認知度が向上</h3>
+                    <p class="future-description">ブランド認知の向上により、企業への問い合わせも増加。採用だけでなくビジネスチャンスも拡大します。</p>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-center my-16">なぜTikTokなのか？【TikTok活用の3大メリット】</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 border-2 border-pink-500 flex flex-col items-center text-center">
+                    <div class="merit-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">① 若年層に強い拡散力</h4>
+                    <p>Z世代に刺さるコンテンツ設計が可能。求職者とのタッチポイントが一気に増加。</p>
+                </div>
+                <div class="card bg-white p-6 border-2 border-pink-500 flex flex-col items-center text-center">
+                    <div class="merit-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">② ブランディング効果</h4>
+                    <p>社員の人柄や現場の雰囲気が伝わり、企業理解が深まりミスマッチを防止。</p>
+                </div>
+                <div class="card bg-white p-6 border-2 border-pink-500 flex flex-col items-center text-center">
+                    <div class="merit-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">③ 費用対効果が高い</h4>
+                    <p>バズりやすい短尺動画だから少ない投資で大きなリターンが期待できる。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. サービス紹介セクション -->
+    <section class="bg-gray-100 section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">企画から運用まで、すべてお任せください。</h2>
+            <p class="text-xl text-center mb-12">ワンストップのTikTok運用代行サービス</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="card bg-white p-6 flex items-start">
+                    <div class="service-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-2">アカウント設計</h4>
+                        <p class="text-gray-600">ターゲット設定／KPI設計／アカウント方針立案</p>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 flex items-start">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-2">動画企画・撮影・編集</h4>
+                        <p class="text-gray-600">現場や社員、製品の魅力を最大化する企画・撮影</p>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 flex items-start">
+                    <div class="service-icon">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-2">投稿・運用</h4>
+                        <p class="text-gray-600">最適なタイミングで投稿、エンゲージメントの最大化</p>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 flex items-start">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-xl font-bold mb-2">分析・レポート</h4>
+                        <p class="text-gray-600">再生数、保存数、応募への影響などを定量評価</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. サービス提供フロー -->
+    <section class="bg-white section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">ご契約から公開までの流れ</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="step-item flex mb-16">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">ヒアリング</h4>
+                        <p class="text-gray-600">採用課題、ターゲット層、想定動画などを丁寧にお伺いします。</p>
+                    </div>
+                </div>
+                <div class="step-item flex mb-16">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">企画提案</h4>
+                        <p class="text-gray-600">投稿計画・動画案をご提示。複数パターンのシナリオもご提案可能です。</p>
+                    </div>
+                </div>
+                <div class="step-item flex mb-16">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">制作・運用開始</h4>
+                        <p class="text-gray-600">撮影・編集を迅速に行い、即運用へ。投稿スケジュールも管理。</p>
+                    </div>
+                </div>
+                <div class="step-item flex">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">分析・改善提案</h4>
+                        <p class="text-gray-600">TikTokインサイトを元にPDCA運用を行い、効果を持続的に向上。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 再生数保証 -->
+    <section class="bg-gray-100 section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">100万回再生保証で、安心スタート！</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="card bg-white p-8 border-4 border-pink-500">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">半年間で合計100万回再生を保証</h3>
+                        <p class="text-xl mb-6">未達成の場合、契約金額の半額をキャッシュバック！</p>
+                        <div class="inline-block gradient-bg text-white font-bold py-3 px-8 rounded-full">
+                            安心の再生保証
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 実績紹介セクション -->
+    <section class="bg-white section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">運用実績</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="case-card">
+                    <a href="https://www.tiktok.com/@fukuei_auto_service" target="_blank" class="block">
+                        <img src="https://page1.genspark.site/v1/base64_upload/13c4004b0b74c44e6c7129fe3266fe7e" alt="福栄オートサービス様TikTokアカウント" class="case-image" />
+                        <div class="case-content">
+                            <h3 class="text-xl font-bold mb-2">福栄オートサービス様（福岡・カーコーティング専門店）</h3>
+                            <p class="text-gray-700 mb-4">半年間の運用で求人応募数が10倍に。</p>
+                            <div class="flex flex-wrap">
+                                <div class="tiktok-statistic">
+                                    <div class="tiktok-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>9,664 フォロワー</span>
+                                </div>
+                                <div class="tiktok-statistic ml-4">
+                                    <div class="tiktok-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span>183,000 いいね</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="case-card">
+                    <a href="https://www.tiktok.com/@kakeru_jimu1" target="_blank" class="block">
+                        <img src="https://page1.genspark.site/v1/base64_upload/38febf43cc911edb6621ccf2e5fba2ad" alt="翔工務店様TikTokアカウント" class="case-image" />
+                        <div class="case-content">
+                            <h3 class="text-xl font-bold mb-2">翔工務店様（福岡・工務店）</h3>
+                            <p class="text-gray-700 mb-4">運用1年でフォロワー9,000人増加。TBS系列のテレビ出演まで実現。</p>
+                            <div class="flex flex-wrap">
+                                <div class="tiktok-statistic">
+                                    <div class="tiktok-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>14,000 フォロワー</span>
+                                </div>
+                                <div class="tiktok-statistic ml-4">
+                                    <div class="tiktok-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span>96,000 いいね</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto mt-12">
+                <div class="card bg-gray-50 p-6">
+                    <h3 class="text-xl font-bold mb-2 text-center">某グルメアカウント様</h3>
+                    <p class="text-gray-700 mb-4 text-center">初月で合計1000万回再生。600万再生を達成した投稿もあり。</p>
+                    <div class="flex justify-center">
+                        <div class="tiktok-statistic">
+                            <div class="tiktok-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span>1,000万+ 総再生回数</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 料金プラン -->
+    <section class="bg-gray-100 section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">料金プラン</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="price-card bg-white">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold">ハーフサポートプラン</h3>
+                        <p class="text-gray-600 mb-4">月1回撮影同行+編集+投稿アドバイス・戦略設計支援</p>
+                        <div class="text-3xl font-bold text-pink-600">150,000円<span class="text-lg text-gray-600">/月</span></div>
+                        <p class="text-gray-600 mt-2">（月10投稿）</p>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="check-item">撮影同行（月1回）</li>
+                        <li class="check-item">動画編集</li>
+                        <li class="check-item">投稿アドバイス</li>
+                        <li class="check-item">戦略設計支援</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card bg-white">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold">フルサポートプラン</h3>
+                        <p class="text-gray-600 mb-4">企画・撮影編集・投稿設計・分析までフルサポート</p>
+                        <div class="text-3xl font-bold text-pink-600">250,000円<span class="text-lg text-gray-600">/月</span></div>
+                        <p class="text-gray-600 mt-2">（月10投稿）</p>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="check-item">企画立案</li>
+                        <li class="check-item">撮影・編集</li>
+                        <li class="check-item">投稿設計</li>
+                        <li class="check-item">アカウント運用</li>
+                        <li class="check-item">効果分析レポート</li>
+                        <li class="check-item">改善提案</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="text-center text-gray-600 mt-8">※各プランの金額は動画制作本数によって要相談</p>
+        </div>
+    </section>
+
+    <!-- 9. お問い合わせ -->
+    <section id="contact" class="bg-white section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">お問い合わせ</h2>
+            
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-lg mb-8">TikTok運用についてのご質問や、サービスに関するお問い合わせはこちらからお願いいたします。</p>
+                <a href="/cdn-cgi/l/email-protection#b8d996ccd9d3d9cbdd96cdc8dcf8dfd5d9d1d496dbd7d5" class="gradient-bg text-white font-bold py-4 px-10 rounded-full text-xl inline-block shadow-lg hover:shadow-xl transition-all">
+                    お問い合わせはこちら <i class="fas fa-envelope ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">MIRANA Buzz</p>
+            <p class="text-sm text-gray-400">© 2023 MIRANA Buzz. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // スムーズスクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
